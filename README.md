@@ -1,5 +1,3 @@
-# get-page project
-
 The get-page project is still developing. Please wait till it is fully developed before trying it.
 
 ## Installation
