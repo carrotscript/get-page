@@ -9,7 +9,7 @@ const get = function(url) {
   return new Promise((resolve) => {
     Promise.all(requests)
       .then((proms) =>
-        proms.forEach((p) => pokemons.push({
+        proms.forEach((p) => responses.push({
           name: p.name,
           id: p.id
         }))
