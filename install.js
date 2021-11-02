@@ -1,5 +1,5 @@
 const get = function(url) {
-  const pokemons = [];
+  const responses = [];
   const requests = [];
   for (let i = 1; i <= 1; i++) {
     const prom = fetch(url).then((r) => r.json());
@@ -14,6 +14,6 @@ const get = function(url) {
           id: p.id
         }))
       )
-      .then(() => resolve(pokemons));
+      .then(() => resolve(responses));
   });
 };
