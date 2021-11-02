@@ -1,13 +1,19 @@
-function request(url, headers, action) {
-  console.log("Performing GET request to server " + url);
-  function reqListener() {
-    eval(action);
+const get = function(url) {
+  const pokemons = [];
+  const requests = [];
+  for (let i = 1; i <= 1; i++) {
+    const prom = fetch(url).then((r) => r.json());
+
+    requests.push(prom);
   }
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onerror = function () {
-    console.error("Failed to fetch server " + url);
-  };
-  xmlhttp.addEventListener("load", reqListener);
-  xmlhttp.open("GET", url);
-  xmlhttp.send();
-}
+  return new Promise((resolve) => {
+    Promise.all(requests)
+      .then((proms) =>
+        proms.forEach((p) => pokemons.push({
+          name: p.name,
+          id: p.id
+        }))
+      )
+      .then(() => resolve(pokemons));
+  });
+};
