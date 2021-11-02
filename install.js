@@ -1,19 +1,12 @@
-const get = function(url) {
-  const responses = [];
-  const requests = [];
-  for (let i = 1; i <= 1; i++) {
-    const prom = fetch(url).then((r) => r.json());
+async function get(url) {
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+}
 
-    requests.push(prom);
-  }
-  return new Promise((resolve) => {
-    Promise.all(requests)
-      .then((proms) =>
-        proms.forEach((p) => responses.push({
-          name: p.name,
-          id: p.id
-        }))
-      )
-      .then(() => resolve(responses));
-  });
-};
+
+/*
+get("https://jsonplaceholder.typicode.com/todos/1").then(data => {
+  console.log(data);
+});
+*/
