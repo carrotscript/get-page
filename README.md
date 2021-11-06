@@ -1,6 +1,6 @@
 ## Installation
 
-This project is only for GET requests. To use this, just import the module:
+This project is only for GET requests. To use this, just import the via the CDN:
 
 ```
 <script src="https://cdn.jsdelivr.net/gh/carrotscript/get-page@main/install.js"></script>
