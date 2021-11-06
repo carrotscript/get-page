@@ -1,3 +1,5 @@
+# Get-Page Project
+[![](https://data.jsdelivr.com/v1/package/gh/carrotscript/get-page/badge)](https://www.jsdelivr.com/package/gh/carrotscript/get-page)
 ## Installation
 
 This project is only for GET requests. To use this, just import the via the CDN:
