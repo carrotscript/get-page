@@ -1,12 +1,5 @@
 async function get(url) {
-  const response = await fetch(url);
+  const response = await fetch("https://htmltojson.pythonanywhere.com/get/?link=" + url);
   const data = await response.json();
-  return data;
+  return data.result;
 }
-
-
-/*
-get("https://jsonplaceholder.typicode.com/todos/1").then(data => {
-  console.log(data);
-});
-*/
