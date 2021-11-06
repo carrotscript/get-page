@@ -3,7 +3,7 @@
 This project is only for GET requests. To use this, just import the module:
 
 ```
-<script src="https://carrotscript.github.io/get-page/install.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/carrotscript/get-page@main/install.js"></script>
 ```
 
 ## Usage
