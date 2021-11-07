@@ -16,3 +16,5 @@ Result:
   "result": "the data returned"
 }
 ```
+
+&copy; Arjun J
