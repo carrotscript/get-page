@@ -5,7 +5,7 @@
 This project is only for GET requests. To use this, just import the via the CDN:
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/carrotscript/get-page@1.1/install.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/carrotscript/get-page/install.min.js"></script>
 ```
 
 ## Usage
