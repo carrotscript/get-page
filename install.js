@@ -7,3 +7,14 @@ async function get(url) {
 function json(data) {
   return JSON.parse(data);
 }
+
+function parseXML(xml, array) {
+var parser, xmlDoc;
+var text = xml;
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("title")[array].childNodes[0].nodeValue;
+}
