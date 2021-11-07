@@ -1,0 +1,5 @@
+Flask
+flask
+requests
+flask_cors
+gunicorn
