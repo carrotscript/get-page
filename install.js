@@ -9,12 +9,12 @@ function json(data) {
 }
 
 function parseXML(xml, array) {
-var parser, xmlDoc;
-var text = xml;
+  var parser, xmlDoc;
+  var text = xml;
 
-parser = new DOMParser();
-xmlDoc = parser.parseFromString(text,"text/xml");
+  parser = new DOMParser();
+  xmlDoc = parser.parseFromString(text,"text/xml");
 
-document.getElementById("demo").innerHTML =
-xmlDoc.getElementsByTagName("title")[array].childNodes[0].nodeValue;
+  document.getElementById("demo").innerHTML =
+  xmlDoc.getElementsByTagName("title")[array].childNodes[0].nodeValue;
 }
