@@ -1,0 +1,22 @@
+{
+  "name": "cors-proxy",
+  "version": "1.0.0",
+  "description": "A CORS proxy for HTTP requests",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cors",
+    "proxy"
+  ],
+  "author": "Arjun Jakkipally",
+  "license": "MIT",
+  "dependencies": {
+    "cors-anywhere": "^0.4.4",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "16.13.0"
+  }
+}
