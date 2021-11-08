@@ -8,10 +8,10 @@ function json(data) {
   return JSON.parse(data);
 }
 
-function xml(xml_data, array) {
+function xml(xml_data, xml_tag, array) {
   var parser, xmlDoc;
   var text = xml_data;
   parser = new DOMParser();
   xmlDoc = parser.parseFromString(text,"text/xml");
-  return xmlDoc.getElementsByTagName("title")[array].childNodes[0].nodeValue;
+  return xmlDoc.getElementsByTagName(xml_tag)[array].childNodes[0].nodeValue;
 }
