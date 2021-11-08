@@ -7,3 +7,11 @@ async function get(url) {
 function json(data) {
   return JSON.parse(data);
 }
+
+function xml(xml_data, array) {
+  var parser, xmlDoc;
+  var text = xml_data;
+  parser = new DOMParser();
+  xmlDoc = parser.parseFromString(text,"text/xml");
+  return xmlDoc.getElementsByTagName("title")[array].childNodes[0].nodeValue;
+}
